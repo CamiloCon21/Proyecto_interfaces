@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Adventure;
+    src: url(src\assets\fonts\Adventure.otf) format('truetype');
+}
+@font-face {
+    font-family: Mollen;
+    src: url(src\assets\fonts\Mollen_Personal_Use-Bold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: Akaya_Kanadaka;
+    src: url(src\assets\fonts\AkayaKanadaka-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: TITULOS;
+    src: url(src\assets\Fonts\Titulo.otf) format('truetype');
+}
+
+.TITULOS{
+  font-family: TITULOS;
+}
+
+@font-face {
+    font-family: DESCRIPCION;
+    src: url(src\assets\Fonts\Descripcion.otf) format('truetype');
+}
+
+.DESCRIPCION{
+  font-family: DESCRIPCION;
+}
+
+
+.Akaya_Kanadaka{
+  font-family: Akaya_Kanadaka;
+}
+
+
+.Adventure{
+    font-family: Adventure;
+}
+
+.mollen{
+    font-family: Mollen;
+}
+html,body {
+    margin: 0;
+    padding: 0; 
+    
+  }

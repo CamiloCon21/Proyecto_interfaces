@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<div class="contenedor">
+  <body>
+    <app-navbar></app-navbar>
+    <div class="panel1">
+      <li><a href="">SUSCRIBIRSE</a></li>
+      <li><a href="">PERSONAJES</a></li>
+      <li><a href="">LIBRERIA IMPERIAL</a></li>
+      <li><a href="">AYUDA</a></li>
+
+    </div>
+    <div class="panel2">
+      <td>
+        <div  class="descripcion">
+          <li class="texto2">{{descriptions}}</li>
+         
+     </div>
+        <div>
+          <button ><img src="./assets/images/icons/button.png" alt="" class="boton"></button>
+        </div>
+        
+      </td>
+
+      <td class="texto">
+        <div>
+          <img mat-card-image src="{{extension}}.{{extension2}}" alt=""  class="img">
+          
+        </div>
+    
+      </td>
+     
+    </div>
+    <div class="panel3">
+      <div class="panel4">
+        <li><a href=""><img src="./assets/images/icons/message.png" alt="" class="icons"></a></li>
+        <li>CHATEA CON UN ASESOR</li>
+      
+      </div >
+      <div class="panel4">
+        <li><a href=""><img src="./assets/images/icons/intercambio.png" alt="" class="icons"></a></li>
+        <li>INTERCAMBIO DE COMICS</li>        
+      </div>
+      <div class="panel4">
+        <li><a href=""><img src="./assets/images/icons/money.png" alt="" class="icons"></a></li>
+        <li>OBTENER UN CODIGO DE TIENDA</li>        
+      </div>
+    </div>
+ 
+ 
+ 
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+ 
+ </body>
+
+</div>
+
+
+
+</html>
