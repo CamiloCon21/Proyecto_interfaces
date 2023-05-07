@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';//alertas
 import { environment } from 'src/environments/environment';//variables de entorno
 import {Md5} from 'ts-md5';
 import { Observable } from 'rxjs';

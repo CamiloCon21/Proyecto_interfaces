@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule  } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
 import { Ng2SearchPipeModule} from 'ng2-search-filter';
 import { HomeModule } from './home/home.module';
 import { navbarModule } from './navbar/navbar.module';
@@ -24,7 +23,6 @@ import { navbarModule } from './navbar/navbar.module';
     BrowserAnimationsModule,    
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule,
     HomeModule,
     navbarModule,
     Ng2SearchPipeModule
