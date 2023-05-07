@@ -1,3 +1,5 @@
+import { eventmodel } from '../models/events.model';
+
 import { Service } from './../services/collection';
 import { comics } from '../services/comics';
 
@@ -5,7 +7,7 @@ import { Component, Injectable, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { Router, RouterLink } from '@angular/router';
 import { events } from '../services/events';
-import { eventmodel } from '../models/events.model';
+
 
 
 @Component({
