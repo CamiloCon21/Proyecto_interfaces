@@ -8,21 +8,32 @@
     
 }
 
-.nav{
+.nav{ 
     width: 100%;
     height: 80px;
     background-color: #2D2121;
     display: flex;
     align-items: center;
     min-width: 80%;
-    padding: 5vh 15vh;
+    padding: 0vh 15vh;
+   
     
     
 
 }
 
+.li{
+    color: white;
+    cursor: pointer;
+}
+.bar{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+ }
+
 .nav2{
-  
+ 
     width: 100%;
     height: 5vh;
     background-color: #2D2121;
@@ -42,6 +53,8 @@
 }
 
 .barra{
+    margin: 0;
+   
     width: 80%;
     height: 80px;
     background-color: #2D2121;
@@ -87,3 +100,53 @@
     height: 60px;
 }
 
+.select {
+    position: relative;
+    display: inline-block;
+   
+    width: 25%;
+}    .select select {
+        font-family: Akaya_Kanadaka;
+     
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 12px 12px;
+        outline: 0;
+        border: 4px inset #7e4444;
+        border-radius: 6px;
+        background: #2D2121;
+        color: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #ffffff;
+            background: #4d3131;
+            cursor: pointer;
+        }
+        .select select:disabled {
+            opacity: 0.2;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 24px;
+    right: 17px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #814747 transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #945b5b;
+}

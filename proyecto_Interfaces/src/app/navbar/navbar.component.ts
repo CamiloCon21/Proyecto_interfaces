@@ -10,7 +10,7 @@ import { Service } from '../services/collection';
 })
 export class NavbarComponent implements OnInit {
   listacodigos!: any[];
-
+  activate = false
   constructor() { }
 
   ngOnInit(): void {
@@ -24,5 +24,6 @@ export class NavbarComponent implements OnInit {
   
   
   click(){
-    console.log("Hola mundo");}
+    this.activate= true
+    }
 }

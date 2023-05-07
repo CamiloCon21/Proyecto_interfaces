@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng2SearchPipeModule} from 'ng2-search-filter';
 import { HomeModule } from './home/home.module';
 import { navbarModule } from './navbar/navbar.module';
+
 //import { HighlightService } from '../app/HighlighService/HighlightService';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { navbarModule } from './navbar/navbar.module';
     FormsModule,
     HomeModule,
     navbarModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
