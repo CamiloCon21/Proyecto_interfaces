@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<div class="contenedor">
+  <body>
+    <app-navbar></app-navbar>
+   
+    <div class="panel">
+        <div class="busqueda">
+            <input type="text" name="search" ngDefaultControl [ngModelOptions]="{standalone: true}"
+            [(ngModel)]="id_serie" autocomplete="off"
+            placeholder=" Busque por comic...  " class="buscar">
+            
+        </div>
+  
+            <div class="panel2">
+
+                <div class="flip-card" data-aos="fade-down" data-aos-duration="1000" *ngFor="let character of character | filter:id_serie">
+                   
+                    <div class="flip-card-inner">
+                         
+                        <div class="flip-card-front">
+                           
+                            <!-- frente de la tarjeta -->
+                            <img mat-card-image src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.title}}" class="img">
+                            <!-- Imagen frontal -->
+                            
+                        </div>
+        
+                        <div class="flip-card-back">
+                            <!-- reverso de la tarjeta -->
+                            <div class="row no-gutters">
+                                <div class="flip-card-front">
+                           
+                                    <!-- frente de la tarjeta -->
+                                    <img mat-card-image src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.title}}" class="imgback">
+                                    <!-- Imagen frontal -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>{{character.title}}</b></h5>
+                           
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        
+    </div>
+ 
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+ 
+ </body>
+
+</div>
+
+
+
+</html>

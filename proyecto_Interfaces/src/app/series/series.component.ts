@@ -1,12 +1,8 @@
-import { eventmodel } from '../models/events.model';
-
-import { Service } from './../services/collection';
-import { comics } from '../services/comics';
 
 import { Component, Injectable, OnInit } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
 import { Router, RouterLink } from '@angular/router';
-import { events } from '../services/events';
+import { series } from '../services/series';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 
 
@@ -22,9 +18,9 @@ export class seriesComponent implements OnInit {
   path : any[] ;
   extension : any[] ;
   extension2 : any[] ;
-  id_comic : any
+  id_serie: any;
 
-  constructor(public router: Router, public service: comics, public model:eventmodel ) {
+  constructor(public router: Router, public service: series) {
 
    }
 
@@ -48,18 +44,6 @@ export class seriesComponent implements OnInit {
   
 }
 
-  Ajustes(){
-  
-   
-  }
-  play(){
-    
-    
-   }
-
-   logros(){
-//
-   }
 
 
 }
