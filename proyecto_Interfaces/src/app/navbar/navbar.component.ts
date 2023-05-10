@@ -9,17 +9,16 @@ import { Component, Injectable, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  listacodigos!: any[];
+  nombre: string;
   activate = false
   constructor() { }
 
   ngOnInit(): void {
-    /*this.service.llamar().subscribe(data => {
-
-
-      this.listacodigos = data as any[]
-      console.log(data)
-    })*/
+    let id_code = sessionStorage.getItem('UsuarioLogin');
+    if(id_code!=null){
+    this.nombre= id_code
+    console.log(id_code)
+    }
   }
   
   

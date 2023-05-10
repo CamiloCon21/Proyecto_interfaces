@@ -11,6 +11,7 @@ import { HomeModule } from './home/home.module';
 import { navbarModule } from './navbar/navbar.module';
 import { seriesModule } from './series/series.module';
 import { characterModule } from './character/character.module';
+import { LoginModule } from './Login/Login.module';
 
 
 //import { HighlightService } from '../app/HighlighService/HighlightService';
@@ -31,7 +32,8 @@ import { characterModule } from './character/character.module';
     navbarModule,
     Ng2SearchPipeModule,
     seriesModule,
-    characterModule
+    characterModule,
+    LoginModule
     
   ],
   providers: [],

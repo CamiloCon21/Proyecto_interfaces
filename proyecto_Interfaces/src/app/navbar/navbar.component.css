@@ -150,3 +150,10 @@
 .select select:disabled ~ .select_arrow {
     border-top-color: #945b5b;
 }
+
+li{
+    font-family: TITULOS;
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 15px;
+}

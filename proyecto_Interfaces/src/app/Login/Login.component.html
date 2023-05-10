@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/typescript" src="login.component.ts"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>BDC</title>
+</head>
+
+<body>
+    <section>
+        <div class="imgBx" data-aos="fade-up" data-aos-duration="1500">
+            <img src="./assets/images/backgrounds/login.jpg" alt="" width="49" height="35">
+        </div>
+
+        <div class="contentBx">
+            <div class="formBx"> 
+                <h2>Login</h2>
+                <form [formGroup]="form" class="form" > <!-- debemos nombrar al formulario como lo nombramos en el component.ts en este caso su nombre es form-->
+                    <div class="form-group">
+                        <div class="inputBx">
+                            <span>Usuario</span>
+                            <input type="text" name="" formControlName="usuario" /> <!-- el controlName de usuario esta declarado en el component.ts al momento de crear el formulario-->
+                          
+                        </div>
+                        <div class="inputBx">
+                            <span>Contraseña</span>
+                            <input type="password" name="" formControlName="contraseña" />
+                        </div>
+                        <div class="inputBx">
+                            <input type="submit" name="" value="Ingresar" [disabled]="form.invalid" class="btn" (click)='ingresar()' /> <!-- el metodo (click) activara el evento ingresoUsuario-->
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
