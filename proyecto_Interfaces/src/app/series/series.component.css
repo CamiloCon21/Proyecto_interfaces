@@ -9,17 +9,18 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("src\assets\images\backgrounds\series.jpg");
+    background-size: cover;
     
 }
 footer{
     margin-top: auto;
     }
 .panel{
-    height: 450px;
+    height: 100%;
 	width: 100%;
 	border: 1px solid #ddd;
-	background: #2D2121;
-   
+    filter: alpha (opacity(50))
 	
   
 }
@@ -32,8 +33,8 @@ footer{
     margin:0;
     padding: 0;    
 	width: 100%;
-    height: 380px;
-	background: #2D2121;
+    height: 100vh;
+    filter: alpha (opacity(50));
 	overflow: scroll;
     scroll-behavior: smooth;
     display: flex;
@@ -44,15 +45,15 @@ footer{
 }
 
 .flip-card {
-  
+    
     margin: 0;
     padding: 0;
     /* Genera un efecto 3D */
     box-sizing: border-box;
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     margin-left: 5vh;
-    margin-top: 5vh;
+    margin-top: 18vh;
    
    
 }
@@ -62,8 +63,8 @@ footer{
 
 .flip-card-inner {
    
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     transition: transform 0.6s;
     /* duracion de la animacion */
     transform-style: preserve-3d;
@@ -82,16 +83,16 @@ footer{
 .flip-card-front {
     
     position: center;  
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     backface-visibility: hidden;
 }
 .flip-card-back {
     position: center;
     /* necesario para posicionar las dos caras a la misma altura */
   
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     backface-visibility: hidden;
     /* nos genera una sombra */
     box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.315);
@@ -101,8 +102,8 @@ footer{
 .flip-card-front img {
     
    
-    width:100%;
-    height:100%;
+    width: 30vh;
+    height: 50vh;
     background-image: cover;
     border-radius:10px;
    
@@ -111,8 +112,8 @@ footer{
 .flip-card-back img {
     
    
-    width:100%;
-    height:100%;
+    width: 30vh;
+    height: 50vh;
     background-image: cover;
     border-radius:10px;   
     filter: blur(0.10rem) brightness(30%);
@@ -128,8 +129,8 @@ footer{
     border-radius:10px;
     /* Genera un efecto 3D */
     perspective: 1500px;
-    width: 200px;
-    height: 250px;   
+    width: 30vh;
+    height: 50vh;   
     border-radius:10px;
 }
 
@@ -138,8 +139,8 @@ footer{
 
 .flip-card-inner {
     border-radius:10px;
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     transition: transform 0.6s;
     /* duracion de la animacion */
     transform-style: preserve-3d;
@@ -159,8 +160,8 @@ footer{
 .flip-card-back {
     position: absolute;
     /* necesario para posicionar las dos caras a la misma altura */
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     backface-visibility: hidden;
     /* nos genera una sombra */
   
@@ -188,8 +189,8 @@ footer{
 .flip-card-back {
     position: relative;
     display: inline-block;
-    width: 200px;
-    height: 250px;
+    width: 30vh;
+    height: 50vh;
     border-radius:10px;
     background-color: #EDFFF6;
     transform: rotateY(180deg);
@@ -219,8 +220,8 @@ footer{
 }
 
 .buscar{
-    margin-top: 20px;
-    width: 200px;
-    font-size: 20px;
+    margin-top: 10vh;
+    width: 50vh;
+    font-size: 5vh;
     font-family: TITULOS;
 }

@@ -52,7 +52,7 @@ margin-top: auto;
 
 .panel2{
     display: flex;
-    background-color: #2D2121;
+    background-color: #000000;
     max-width: 100%;
     min-width: 100%;
     
@@ -83,14 +83,15 @@ margin-top: auto;
     width: 30%;
     min-width: 10%;
     height: 150px;
-    background-color: #FF7A00;
+    background-color: #ff0000;
     justify-content: space-between;
     padding: 30px 25px;
     color: white;
     white-space: break-word;
     text-align: center;
     font-family: Akaya_Kanadaka;
-  
+    cursor: pointer;
+    margin-top: 4vh;
   
    
 }
@@ -108,10 +109,11 @@ a{
     padding-top: 10px;
     width: 160px;
     height: 45px;
+    cursor: pointer;
     
 }
 button{
-    background-color: #2D2121;
+    background-color: #000000;
     border: none;
 }
 
