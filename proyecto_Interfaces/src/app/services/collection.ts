@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 
-export class Service {
+export class character {
     public  pubkey = "e8d61b257c5cfbfe3380aceace1062d5";
     public  prikey = "d4b27568db912fee2ad47449cfe0a0a68d7ed4fa";
     public  ts = new Date().getDate();

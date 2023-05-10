@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { Service } from '../services/collection';
+
 @Injectable({
   providedIn: 'root'
 })

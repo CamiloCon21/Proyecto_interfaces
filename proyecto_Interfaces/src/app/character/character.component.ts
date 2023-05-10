@@ -12,11 +12,11 @@ import { character } from '../services/collection';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './comics.component.html',
-  styleUrls: ['./comics.component.css']
+  selector: 'app-character',
+  templateUrl: './character.component.html',
+  styleUrls: ['./character.component.css']
 })
-export class comicsComponent implements OnInit {
+export class characterComponent implements OnInit {
   url: any;
   character : any[] ;
   descriptions : any[];
@@ -25,7 +25,7 @@ export class comicsComponent implements OnInit {
   extension2 : any[] ;
   id_comic : any
 
-  constructor(public router: Router, public service: comics, public model:eventmodel ) {
+  constructor(public router: Router, public service: character, public model:eventmodel ) {
 
    }
 

@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     
+    
 }
 footer{
     margin-top: auto;
@@ -19,26 +20,46 @@ footer{
 	width: 100%;
 	border: 1px solid #ddd;
 	background: #2D2121;
- 
+    overflow: scroll;
+    border: 3px solid red;
+    min-height: 650px;
+    max-height: 350px;
 	
   
 }
 .busqueda{
-   
+    background: linear-gradient(to right, #685b5b, #2D2121);
     display: flex;
     justify-content: center
+}
+.Description{
+
+   padding: 50px 50px;
+   margin-left: 50px;
+   width: 35%;
+  
+}
+.Descripcionheroe{
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: DESCRIPCION;
+}
+.Titulo{
+    font-size: 20px;
+    font-family: TITULOS;
+
 }
 .panel2{
     margin:0;
     padding: 0;    
 	width: 100%;
     height: 380px;
-	background: #2D2121;
-	overflow: scroll;
+    background: linear-gradient(to right, #685b5b, #2D2121);
+   border-bottom: 3px solid #685b5b;
+	
     scroll-behavior: smooth;
     display: flex;
     margin-bottom: auto;
-  
    
 
 }

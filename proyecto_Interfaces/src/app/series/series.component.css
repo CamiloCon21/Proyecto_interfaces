@@ -19,6 +19,7 @@ footer{
 	width: 100%;
 	border: 1px solid #ddd;
 	background: #2D2121;
+   
 	
   
 }
@@ -37,6 +38,7 @@ footer{
     scroll-behavior: smooth;
     display: flex;
     margin-bottom: auto;
+   
    
 
 }
