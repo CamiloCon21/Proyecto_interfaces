@@ -1,4 +1,3 @@
-
 import { Component, Injectable, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { series } from '../services/series';
