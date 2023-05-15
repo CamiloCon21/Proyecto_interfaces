@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,39 +6,41 @@
     list-style: none;
 
 }
-body{
- 
+
+body {
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 
 }
 
-footer{
-margin-top: auto;
+footer {
+    margin-top: auto;
 }
 
 .flip-card-back img {
-    
-   
+
+
     max-width: 280px;
     min-width: 60px;
-    
-    background-image: cover;
-    border-radius:10px;   
 
-   
+    background-image: cover;
+    border-radius: 10px;
+
+
 }
-.contenedor{
-    width: 100%;  
+
+.contenedor {
+    width: 100%;
     box-sizing: border-box;
     align-items: center;
     min-width: 80%;
 
 }
 
-.panel1{
+.panel1 {
     display: flex;
     width: 100%;
     min-width: 80%;
@@ -47,38 +49,38 @@ margin-top: auto;
     padding: 15px 200px;
     border: 3px solid black;
     font-family: TITULOS;
-   
+
 }
 
-.panel2{
+.panel2 {
     display: flex;
     background-color: #000000;
     max-width: 100%;
     min-width: 100%;
-    
+
     height: 380px;
     max-height: 100%;
     min-width: 100%;
     justify-content: space-between;
     padding: 5px 100px;
-    
-   
-   
+
+
+
 }
 
-.panel3{
+.panel3 {
 
-    display: flex;  
+    display: flex;
     width: 100%;
     min-width: 80%;
-    height: 190px;
+    height: 390px;
     justify-content: space-between;
     padding: 5px 200px;
- 
-   
+
+
 }
 
-.panel4{
+.panel4 {
     display: flex;
     width: 30%;
     min-width: 10%;
@@ -92,62 +94,203 @@ margin-top: auto;
     font-family: Akaya_Kanadaka;
     cursor: pointer;
     margin-top: 4vh;
-  
-   
+
+
 }
 
-a{
+a {
     font-size: 20px;
     color: black;
 }
-.icons{
+
+.icons {
     width: 80px;
     height: 80px;
 }
 
-.boton{
+.boton {
     padding-top: 10px;
     width: 160px;
     height: 45px;
     cursor: pointer;
-    
+
 }
-button{
+
+button {
     background-color: #000000;
     border: none;
 }
 
-.texto{
+.texto {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     width: 100%;
     height: 200px;
 
-   
 
-    
+
+
 }
 
-.descripcion{
+.descripcion {
     display: flex;
     justify-content: center;
     text-align: justify;
     width: 100%;
     height: 200px;
-  
+
 }
 
-.texto2{
-    
-    padding: 100px 30px ;
+.texto2 {
+
+    padding: 100px 30px;
     font-family: DESCRIPCION;
     color: white
 }
 
-.img{
+.img {
     width: 50%;
     height: auto;
     margin-left: 25%;
     padding-top: 60px;
+
+}
+
+footer .wave {
+
+    position: absolute;
+
+    top: -100px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100px;
+
+    background: url(../../assets/wave.svg);
+
+    background-size: 990px 110px;
+}
+
+footer .derechos p {
+
+    color: #fff;
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+}
+
+
+
+
+
+footer .wave#wave1 {
+
+    z-index: 1000;
+
+    opacity: 1;
+
+    bottom: 0;
+
+    animation: animateWave 4s linear infinite;
+
+}
+
+
+
+
+footer .wave#wave2 {
+
+    z-index: 999;
+
+    opacity: 0.5;
+
+    bottom: 10px;
+
+    animation: animateWave_02 4s linear infinite;
+
+}
+
+
+
+
+footer .wave#wave3 {
+
+    z-index: 1000;
+
+    opacity: 0.2;
+
+    bottom: 15px;
+
+    animation: animateWave_02 3s linear infinite;
+
+}
+
+
+
+
+footer .wave#wave4 {
+
+    z-index: 999;
+
+    opacity: 0.7;
+
+    bottom: 20px;
+
+    animation: animateWave_02 3s linear infinite;
+
+}
+
+@keyframes animateWave {
+
+    0% {
+
+        background-position-x: 1000px;
+
+    }
+
+    100% {
+
+        background-position-x: 0px;
+
+    }
+
+}
+
+
+
+
+@keyframes animateWave_02 {
+
+    0% {
+
+        background-position-x: 0px;
+
+    }
+
+    100% {
+
+        background-position-x: 1000px;
+
+    }
+
+}
+
+footer {
+
+    position: relative;
+
+    width: 100%;
+
+    background: #000000;
+
+    min-height: 100px;
+
+    padding: 20px 50px;
 
 }
