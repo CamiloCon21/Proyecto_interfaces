@@ -8,6 +8,10 @@ import { seriesComponent } from '../series/series.component';
 import { characterComponent } from '../character/character.component';
 import { LoginComponent } from '../Login/Login.component';
 import { registerComponent } from '../Login/register/register.component';
+import { libreriacomponent } from '../Libreria/libreria.component';
+import { savelibcomponent } from '../guardarlibro/savelib.component';
+import { prestamocomponent } from '../prestamos/prestamo.component';
+import { sollibcomponent } from '../solicitar_libro/sollib.component';
 
 
 
@@ -24,6 +28,12 @@ const routes: Routes = [
             { path: 'characters', component: characterComponent },
             { path: 'login', component: LoginComponent },
             { path: 'register', component: registerComponent },
+            { path: 'libreria', component: libreriacomponent },
+            { path: 'savelib', component: savelibcomponent },
+            { path: 'prestamo', component: prestamocomponent },
+            { path: 'sollib', component: sollibcomponent },
+
+
             { path: '**', redirectTo: 'inicio' },
            
             

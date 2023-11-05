@@ -44,7 +44,7 @@ export class events {
         
       })
       
-      return this.http.get<any>("https://gateway.marvel.com:443/v1/public/series?apikey="+apikey+"&hash="+hash+"&ts="+this.ts+"").pipe(map((data: any)=>data.data.results[5]));
+      return this.http.get<any>("https://gateway.marvel.com:443/v1/public/series?apikey="+apikey+"&hash="+hash+"&ts="+this.ts+"").pipe(map((data: any)=>data.data.results[19]));
   }
  
 };

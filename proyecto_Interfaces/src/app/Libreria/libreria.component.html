@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <app-navbar></app-navbar>
+  <div class="contenedor">
+    <div class="panel1">
+      <li><a href="/auth/libreria">SOLICITAR COMICS</a></li>
+      <li><a href="auth/prestamo">MIS COMICS</a></li>
+      <li><a href="">LIBRERIA IMPERIAL</a></li>
+      <li><a href="">AYUDA</a></li>
+      
+    </div>
+      <form [(ngModel)]="id" [ngModelOptions]="{standalone: true}"
+      ngDefaultControl >
+          <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Disponibles</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let producto of libroModel" value="(producto.ID_LIBRO)" >
+                  <td>{{ producto.ID_LIBRO }}</td>
+                  <td>{{ producto.NOMBRE }}</td>
+                  <td>{{ producto.DESCRIPCION }}</td>
+                  <td>{{ producto.DISPONIBLES }}</td>
+                  <td>
+                      <button class="btn btn-info" (click)="id = producto.ID_LIBRO; enviarlibro()">Solicitar</button>
+  
+  
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+  
+  
+  
+      </form>
+  
+      
+        
+        
+  </div>
+  
+      
+               
+      
+      
+   
+</body>
+<app-footer></app-footer>
+
+
+</html>

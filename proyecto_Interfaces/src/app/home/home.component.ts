@@ -1,6 +1,5 @@
 import { Router, RouterLink } from '@angular/router';
 import { events } from '../services/events';
-import { eventmodel } from '../models/events.model';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 
@@ -19,7 +18,7 @@ export class HomeComponent implements OnInit {
   extension : any[] ;
   extension2 : any[] ;
 
-  constructor(public router: Router, public service: events, public model:eventmodel ) {
+  constructor(public router: Router, public service: events ) {
 
    }
 
@@ -32,14 +31,14 @@ export class HomeComponent implements OnInit {
      
       const array = Object.values(this.character); 
      for (let i = 0; i < array.length; i++) {
-      // console.log(array[i]);
+      //console.log(array[i]);
         this.descriptions = array[2];
 
         this.path = array[10];
         
     }
  
-    console.log(this.path);
+  //  console.log(this.path);
     
     const arreglo = Object.values(this.path); 
      for (let i = 0; i < arreglo.length; i++) {
@@ -51,7 +50,7 @@ export class HomeComponent implements OnInit {
         
     }
     this.url= this.extension+"."+this.extension2
-    console.log(this.url)
+    //console.log(this.url)
     
      
       

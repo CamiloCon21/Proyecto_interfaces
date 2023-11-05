@@ -1,4 +1,5 @@
 
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -12,6 +13,11 @@ import { navbarModule } from './navbar/navbar.module';
 import { seriesModule } from './series/series.module';
 import { characterModule } from './character/character.module';
 import { LoginModule } from './Login/Login.module';
+import { LibreriaModule } from './Libreria/libreria.module';
+import { savelibModule } from './guardarlibro/savelib.module';
+import { prestamoModule } from './prestamos/prestamo.module';
+import { sollibModule } from './solicitar_libro/sollib.module';
+
 
 
 //import { HighlightService } from '../app/HighlighService/HighlightService';
@@ -32,8 +38,12 @@ import { LoginModule } from './Login/Login.module';
     navbarModule,
     Ng2SearchPipeModule,
     seriesModule,
-    characterModule,
-    LoginModule
+    LoginModule,
+    LibreriaModule,
+    savelibModule,
+    prestamoModule,
+    sollibModule,
+   
     
   ],
   providers: [],

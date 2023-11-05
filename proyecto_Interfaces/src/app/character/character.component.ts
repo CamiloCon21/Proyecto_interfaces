@@ -1,4 +1,4 @@
-import { eventmodel } from '../models/events.model';
+
 import { comics } from '../services/comics';
 import { Router, RouterLink } from '@angular/router';
 import { events } from '../services/events';
@@ -24,7 +24,7 @@ export class characterComponent implements OnInit {
   extension2 : any[] ;
   id_comic : any
 
-  constructor(public router: Router, public service: character, public model:eventmodel ) {
+  constructor(public router: Router, public service: character ) {
 
    }
 

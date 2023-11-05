@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   
+
+<body>
+    <section>
+      <div class="imgBx" data-aos="fade-up" data-aos-duration="1500">
+        <img src="./assets/images/backgrounds/crear.webp" alt="" />
+      </div>
+
+      <div class="contentBx" data-aos="fade-down" data-aos-duration="1500">
+        <div class="formBx">
+          <h2>CREAR COMIC</h2>
+
+          <form [formGroup]="formulario" class="form">
+            <div class="form-group">
+              <div class="inputBx">
+                <span>Nombre del comic</span>
+                <input type="text" name="" formControlName="NOMBRE" />
+              </div>
+          
+              <div class="inputBx">
+                <span>Descripcion del comic</span>
+                <input type="text" name="" formControlName="DESCRIPCION" />
+              </div>
+              <div class="inputBx">
+                <span>Disponibles</span>
+                <input type="number" name=""  formControlName="DISPONIBLES" />
+              </div>
+          
+              <div class="inputBx">
+                <span>Estado del comic</span>
+                <input type="number" name=""  formControlName="ESTADO"  />
+              </div>
+          
+            
+              <div class="inputBx">
+                <input type="submit" name="" value="GUARDAR" class="btn" (click)="enviarlibro()" />
+              </div>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+   
+  </body>
+</html>

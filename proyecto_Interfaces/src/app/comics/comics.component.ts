@@ -1,4 +1,4 @@
-import { eventmodel } from '../models/events.model';
+
 import { comics } from '../services/comics';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
@@ -25,7 +25,7 @@ export class comicsComponent implements OnInit {
   extension2 : any[] ;
   id_comic : any
 
-  constructor(public router: Router, public service: comics, public model:eventmodel ) {
+  constructor(public router: Router, public service: comics ) {
 
 
    }
